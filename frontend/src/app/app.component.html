@@ -1,51 +1,45 @@
 
 <div class="text-center"> 
+  <h4>Enter your labels: </h4>
   <form>
     <input class="form-control" [formControl]="label" type="text"> 
   </form>
-  <button (click)="onAdd($event)"  
-      class="btn btn-success"> 
+  <button class="button button4" (click)="onAdd($event)"  > 
       ADD 
   </button> 
-</div> 
-
-
-    <div class="text-center"> 
-      <input class="form-control" type="file" 
-              (change)="onChange($event)"> 
-    
-      <button (click)="onDisplay()"  
-          class="btn btn-success"> 
-          Display 
-      </button> 
-
-      
-  </div> 
-    
-  <div>
-    <button (click)="sendData()"  
-          class="btn btn-success"> 
-          Envoyer 
-      </button> 
-  </div>
-  
-  
-  <!--Flag variable is used here-->
   <div class="container" *ngIf="Labels.length !=0"> 
     <h5>Label's List: </h5> 
      [ <span *ngFor="let label of Labels; index as i">
           <span class="labels" [style.background-color]="colors[i]" (click)="labelClicked(colors[i], label)">{{label}} </span> 
        </span>]
   
-  </div> 
+  </div> <br>
+</div> 
 
-  <!--Flag variable is used here-->
-  <div #textContainer class="container" *ngIf="loading" (mouseup)="highlightSelectedText(textContainer)"> 
-      {{fileOutput}} 
+
+    <div class="text-center"> 
+      <h4>Choose you ".txt" file: </h4>
+      <input class="form-control" type="file" 
+              (change)="onChange($event)"> 
+    
+      <button class="button button2" (click)="onDisplay()"  > 
+          Display 
+      </button> 
+
+      <div #textContainer class="container" *ngIf="loading" (mouseup)="highlightSelectedText(textContainer)"> 
+          {{fileOutput}} 
+      </div> 
+      
   </div> 
     
+  <div>
+    <h4>You're done? Send your data now! </h4>
+    <button class="button button1" (click)="sendData()"  > 
+          Submit 
+      </button> 
+  </div>
   
-
+  
 
 
 <router-outlet />

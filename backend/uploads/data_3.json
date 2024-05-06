@@ -1,0 +1,23 @@
+{
+    "text": "Fullstack & Devops Engineer| Harington | Tunisia\nFebruary 2023 \u2013 Present\n\u2022 Contribution to an open-source project for a \"low code\" generation tool entitled \"leto-modelizer\" using JavaScript,\nVueJs and open-source JavaScript libraries.\n\u2022 Design and development of plugins for the \"leto-modelizer\" concerning devops tools \"gitlab-ci\" and \"terraform\".\n\u2022 Definition of the plugin components: \"metadata\", implementation of the \"parser\" (part responsible for transforming\ngraphical components into textual code) and \"renderer\" (part responsible for converting text into graphical\ncomponents, based on a defined grammar), using JavaScript and the Antlr, Lidy and Nunjuks libraries.\n\u2022Implementation of unit tests using the Jest library.\n\u2022 Code review for other plugins created as part of the \"leto-modelizer\" project.\n\u2022 Set up and maintain ci/cd chains for projects based on \"Microservices\" architecture using Docker, Jenkins, k8s, Helm,\nMicrosoft Azure.\nTechnologies: - JavaScript, VueJs, Antlr, Nunjuks, Lidy, Git and Jest.\n - Docker, Kubernetes, Helm, Jenkins and Microsoft Azure.\n",
+    "annotation": [
+        {
+            "start": "104",
+            "end": "219",
+            "label": "test",
+            "text": "ce project for a \"low code\" generation tool entitled \"leto-modelizer\" using JavaScript,\nVueJs and open-source JavaS"
+        },
+        {
+            "start": "86",
+            "end": "199",
+            "label": "good",
+            "text": "ng devops tools \"gitlab-ci\" and \"terraform\".\n\u2022 Definition of the plugin components: \"metadata\", implementation of"
+        },
+        {
+            "start": "174",
+            "end": "393",
+            "label": "best",
+            "text": " on a defined grammar), using JavaScript and the Antlr, Lidy and Nunjuks libraries.\n\u2022Implementation of unit tests using the Jest library.\n\u2022 Code review for other plugins created as part of the \"leto-modelizer\" project.\n"
+        }
+    ]
+}

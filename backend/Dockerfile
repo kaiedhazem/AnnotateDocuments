@@ -4,7 +4,7 @@ FROM python:3.11-slim
 WORKDIR /app
 
 # Install dependencies (replace with your actual package names)
-RUN pip install django gunicorn
+RUN pip install django gunicorn && pip install django-cors-headers
 
 # Copy your Django project
 COPY . .
