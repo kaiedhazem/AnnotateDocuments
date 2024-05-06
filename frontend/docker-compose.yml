@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  backend:
+    image: backend  # Assuming your pre-built Django image is named "backend"
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./media:/media/
+      - ./static:/static/
+    environment:
+      DJANGO_SETTINGS_MODULE: backend.settings
+
+  frontend:
+    image: angularapp  
+    ports:
+      - "4200:4200"  
+      - backend
+
