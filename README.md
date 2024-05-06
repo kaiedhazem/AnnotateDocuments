@@ -53,8 +53,10 @@ To get started with the project, follow these steps:
 
 1. Clone the repository
 2. Install Docker and Docker Compose
-3. Run `docker-compose up -d` to start the backend and frontend services
-4. Access the application in your web browser: http://localhost:8000 (replace with the appropriate port if necessary)
+3. build the docker files (frontend+backend)
+4. get in the frontend directory (cd frontend)
+5. Run `docker-compose up` to start the backend and frontend services ( make sure of the images names )
+6. Access the application in your web browser: http://localhost:4200 (replace with the appropriate port if necessary)
 
 **Additional Notes**
 
